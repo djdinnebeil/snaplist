@@ -1,0 +1,133 @@
+.favorites-page {
+  width: 80%;
+  margin: auto;
+}
+
+.favorites-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.favorite-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.favorite-item h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.favorite-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.remove-button,
+.favorites-view-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.remove-button {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.remove-button:hover {
+  background-color: #ff7875;
+  transform: scale(1.05);
+}
+
+.favorites-view-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.favorites-view-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .favorite-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .favorite-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .favorite-item-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .remove-button,
+  .favorites-view-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.favorites-product-name {
+  text-align: left;
+}
+
+.favorites-product-link {
+  text-decoration: none;
+}
+
+.inventory-item-name {
+  text-align: left;
+}
+
+.no-items-for-sale {
+  text-align: center;
+}
+
+.center-text-favorites-page {
+  text-align: center;
+}
